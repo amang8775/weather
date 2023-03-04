@@ -1,0 +1,152 @@
+
+*{
+    margin: 0px;
+    padding: 0%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background: rgb(0,212,255);
+    background: linear-gradient(90deg, rgb(0, 102, 255) 0%, rgba(92,17,158,1) 100%);
+}
+
+h1{
+  text-align: center;
+  color: white;
+  font-size: 30px;   
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+.tab-container{
+    position: relative;
+    width: 600px;
+    margin: 20px auto  ;
+    display: flex;
+    justify-content: space-between ; 
+    color: white;
+    font-size: 20px;  
+}
+.tab{
+    cursor: pointer;
+    letter-spacing: 2px;
+
+}
+.tab.current-tab {
+    background-color:rgba(219, 226, 239, 0.5);
+    border-radius: 4px;
+}
+
+.weather-container{
+    width: 600px;
+    margin: 20px auto  ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.grant-location-container{
+    display: none;
+}
+.grant-location-container.active{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    font-size: 20px ; 
+    justify-content: center;
+    align-items: center;
+    opacity: 0.7;
+}
+.btn{
+    all: unset;
+    background-color: rgb(36, 110, 180);
+    color: white;
+    font-weight: bolder;
+    border-radius: 5px;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    text-transform: capitalize;
+
+}
+.loading-container{
+    display: none;
+}
+.loading-container.active{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.user-info-container{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.user-info-container.active{
+    display: flex;
+}
+.user-info-container p{
+    font-size: 20px;
+    color : white;
+    text-transform: capitalize;
+}
+.user-info-container [data-weatherIcon]{
+   width: 70px;
+}
+.name{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.name p{
+    font-size: 30px;
+    font-weight: bolder;
+    color: white ; 
+}
+.name img{
+    width: 30px;
+}
+
+.parameter-container{
+    display: flex;
+    gap: 15px;
+    text-align: center;
+    
+}
+.parameter{
+    background-color: rgb(175, 171, 171);
+    border-radius: 10px;
+    padding: 10px;
+}
+.form-container{
+    display: none;
+    max-width: 600px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.form-container.active{
+    display: flex;
+}
+.form-container input{
+    all: unset;
+    width: 400px;
+    background-color: rgb(175, 171, 171);
+    cursor: pointer;
+    border-radius: 2px;
+    color: white;
+    padding: 10px 10px;
+}
+.form-container input::placeholder{
+    color: white;
+}
+.form-container .btn{
+    border-radius: 100%;
+
+}
